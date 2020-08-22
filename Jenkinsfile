@@ -6,7 +6,7 @@ pipeline {
 
             steps{
 
-                withMaven(maven : 'Movan'){
+                withMaven(maven : 'maven_3_5_0'){
                     sh 'mvn clean compile'
 
                 }
@@ -18,7 +18,7 @@ pipeline {
 
             steps{
 
-                withMaven(maven : 'Movan'){
+                withMaven(maven : 'maven_3_5_0'){
                     sh 'mvn test'
 
                 }
@@ -30,7 +30,7 @@ pipeline {
 
             steps{
 
-                withMaven(maven : 'Movan'){
+                withMaven(maven : 'maven_3_5_0'){
                     sh 'mvn clean deploy'
 
                 }
